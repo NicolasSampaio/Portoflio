@@ -7,9 +7,11 @@ export function Header() {
   return (
     <header className="flex justify-between">
       <div className="flex">
-        <span className="inline-block text-5.5xl font-bold text-lincoliRed border border-lincoliRed rounded-2xl p-3 mt-8 ml-8">
+        <span className="text-5.5xl font-bold text-lincoliRed mt-8 ml-8">
           LX
         </span>
+
+        <span className="absolute border border-lincoliRed rounded-2xl w-36 h-36 -top-5 -left-5 rotateSquare"></span>
 
         <nav className="mt-8 ml-24">
           <ul className="flex h-full gap-20 items-center">

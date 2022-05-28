@@ -13,3 +13,25 @@
   src: local("AvenirLTStd-Book"),
     url("./fonts/AvenirLTStd-Book.ttf") format("opentype");
 }
+
+.lincoliGradient {
+  background: transparent
+    linear-gradient(
+      267deg,
+      #6f23d8 0%,
+      #a2359b 0%,
+      #e54c4c 31%,
+      #36a9dd 55%,
+      #bedd3d 71%,
+      #ef49a2 85%,
+      #808080 100%
+    )
+    0% 0% no-repeat padding-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rotateSquare {
+  transform: matrix(0.93, -0.37, 0.37, 0.93, 0, 0);
+}
