@@ -1,4 +1,4 @@
-import arrowRightImg from "../assets/ArrowRight.svg";
+import { Link } from "react-router-dom";
 
 export function Main() {
   return (
@@ -15,12 +15,14 @@ export function Main() {
       </p>
 
       <div className="text-2.1xl text-white">
-        <button
-          className="relative border rounded-xl border-white py-7 px-16 
+        <Link to="/portfolio">
+          <button
+            className="relative border rounded-xl border-white py-7 px-16 
           after:absolute after:content-[url('./assets/ArrowRight.svg')] after:h-12 after:w-20 after:top-5 after:-right-20"
-        >
-          My Recent Work
-        </button>
+          >
+            My Recent Work
+          </button>
+        </Link>
       </div>
     </div>
   );
