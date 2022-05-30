@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import githubIcon from "../assets/github.svg";
 import instagramIcon from "../assets/instagram.svg";
 import linkedinIcon from "../assets/linkedin.svg";
+import { ContactMe } from "./contactme";
 
 export function Header() {
   return (
@@ -39,36 +40,7 @@ export function Header() {
         </nav>
       </div>
 
-      <div className="flex items-center gap-7 mt-8 mr-12">
-        <a
-          href="https://github.com/NicolasSampaio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button>
-            <img src={githubIcon} alt="Github Icon" />
-          </button>
-        </a>
-
-        <a
-          href="https://www.instagram.com/shizas.png/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button>
-            <img src={instagramIcon} alt="Instagram Icon" />
-          </button>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/nicolassampaio/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button>
-            <img src={linkedinIcon} alt="Linkedin Icon" />
-          </button>
-        </a>
-      </div>
+      <ContactMe styleInfo="gap-7 mt-8 mr-12" />
     </header>
   );
 }

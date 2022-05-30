@@ -1,4 +1,5 @@
 import { MyRecentWorkButton } from "../components/MyRecentWorkButton";
+import { ContactMe } from "../components/contactme";
 
 import githubImg from "../assets/github.svg";
 import instagramImg from "../assets/instagram.svg";
@@ -9,7 +10,7 @@ export function AboutMe() {
   return (
     <main className="flex">
       <h2
-        className="flex items-center justify-center w-40 -rotate-90
+        className="flex items-center justify-center h-24 self-center w-40 -rotate-90
       text-7.5xl whitespace-nowrap text-white"
       >
         about me
@@ -44,11 +45,8 @@ export function AboutMe() {
           Get in Touch
         </h3>
         <span className="w-[11rem] self-center mt-1 mb-8 border border-white"></span>
-        <div className="flex justify-between">
-          <img src={githubImg} alt="Github Icon" className="w-20 h-20" />
-          <img src={instagramImg} alt="Github Icon" className="w-20 h-20" />
-          <img src={linkedinImg} alt="Github Icon" className="w-20 h-20" />
-        </div>
+
+        <ContactMe styleInfo="justify-between" styleImgInfo="w-20 h-20" />
       </div>
     </main>
   );
