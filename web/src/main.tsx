@@ -6,7 +6,7 @@ import { App } from "./App";
 import { Portfolio } from "./routes/portfolio";
 
 import "./global.css";
-import { Main } from "./components/Main";
+import { Homepage } from "./components/Homepage";
 import { AboutMe } from "./routes/aboutMe";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route index element={<Main />} />
+          <Route index element={<Homepage />} />
 
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="aboutme" element={<AboutMe />} />
