@@ -20,7 +20,7 @@ export function Portfolio() {
           Send me an{" "}
           <a
             href="mailto:nicolas.pereira.sampaio16@gmail.com"
-            className="text-lincoliRed underline"
+            className="text-lincoliRed underline hover:text-white transition duration-0 hover:duration-300"
           >
             Email
           </a>{" "}
@@ -29,7 +29,7 @@ export function Portfolio() {
             href="https://github.com/NicolasSampaio"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-lincoliRed underline"
+            className="text-lincoliRed underline hover:text-white transition duration-0 hover:duration-300"
           >
             GitHub
           </a>{" "}

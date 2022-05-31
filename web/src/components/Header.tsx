@@ -1,7 +1,4 @@
 import { Link } from "react-router-dom";
-import githubIcon from "../assets/github.svg";
-import instagramIcon from "../assets/instagram.svg";
-import linkedinIcon from "../assets/linkedin.svg";
 import { ContactMe } from "./contactme";
 
 export function Header() {
