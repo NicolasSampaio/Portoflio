@@ -1,9 +1,10 @@
 <p align="center">
-  <img alt="Letmeask" src=".github/logo.svg" width="160px">
+  ![icon](https://user-images.githubusercontent.com/42179041/171270015-39c971b6-d8ad-4223-ba8a-a54ac3be0c1f.PNG)
+
 </p> 
 
 <h1 align="center">
-    <img alt="Letmeask" src=".github/cover.svg" />
+    Nicolas Sampaio Portolio
 </h1>
 
 <br>
