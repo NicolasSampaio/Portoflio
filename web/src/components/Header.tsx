@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import { ContactMe } from "./contactme";
+import { ContactMe } from "./Contactme";
 
 export function Header() {
   return (
     <header className="flex justify-between">
       <div className="flex">
         <span className="text-5.5xl font-bold text-lincoliRed mt-8 ml-8">
-          LX
+          NS
         </span>
 
         <span className="absolute border border-lincoliRed rounded-2xl w-36 h-36 -top-5 -left-5 rotateSquare"></span>
