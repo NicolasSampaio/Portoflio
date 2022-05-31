@@ -3,18 +3,19 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { App } from "./App";
+
 import { Portfolio } from "./routes/portfolio";
+import { AboutMe } from "./routes/aboutMe";
+import { Home } from "./routes/home";
 
 import "./global.css";
-import { Homepage } from "./routes/Homepage";
-import { AboutMe } from "./routes/aboutMe";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route index element={<Homepage />} />
+          <Route index element={<Home />} />
 
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="aboutme" element={<AboutMe />} />
@@ -23,8 +24,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route
           path="*"
           element={
-            <main style={{ padding: "1rem" }}>
-              <p>Get out of here curious 👺!</p>
+            <main className="self-center">
+              <p className="text-white">Get out of here curious 👺!</p>
             </main>
           }
         />

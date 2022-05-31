@@ -2,9 +2,6 @@ module.exports = {
   content: ["./src/**/*.{html,js,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        texture: "url('./assets/BG.svg')",
-      },
       colors: {
         lincoliRed: "#F04848",
         lincoliGrey: "#C7C6C6",

@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  background-image: url("assets/BG.svg");
+}
+
+body::-webkit-scrollbar {
+  width: 5px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #c7c6c6; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f04848; /* color of the scroll thumb */
+  border-radius: 3rem; /* roundness of the scroll thumb */
+  border: 3px solid #f04848; /* creates padding around scroll thumb */
+}
+
 @font-face {
   font-family: "AvenirLTStd-Black";
   src: local("AvenirLTStd-Black"),
