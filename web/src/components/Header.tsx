@@ -16,25 +16,19 @@ export function Header() {
 
         <nav className="mt-8 ml-24">
           <ul className="flex h-full gap-20 items-center">
-            <li className="text-1.9xl text-lincoliGrey">
-              <Link to="/">
-                <button>home</button>
-              </Link>
+            <li className="text-1.9xl text-lincoliGrey hover:text-lincoliRed transition duration-0 hover:duration-300">
+              <Link to="/">home</Link>
             </li>
-            <li className="text-1.9xl text-lincoliGrey">
-              <Link to="aboutme">
-                <button>about me</button>
-              </Link>
+            <li className="text-1.9xl text-lincoliGrey hover:text-lincoliRed transition duration-0 hover:duration-300">
+              <Link to="aboutme">about me</Link>
             </li>
             {/* <li className="text-1.9xl text-lincoliGrey">
               <a href="">
                 <button>blog</button>
               </a>
             </li> */}
-            <li className="text-1.9xl text-lincoliGrey">
-              <Link to="portfolio">
-                <button>portfolio</button>
-              </Link>
+            <li className="text-1.9xl text-lincoliGrey hover:text-lincoliRed transition duration-0 hover:duration-300">
+              <Link to="portfolio">portfolio</Link>
             </li>
           </ul>
         </nav>

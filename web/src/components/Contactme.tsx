@@ -14,40 +14,35 @@ export function ContactMe({ styleInfo, styleImgInfo }: ContactMeProps) {
         href="https://github.com/NicolasSampaio"
         target="_blank"
         rel="noopener noreferrer"
+        className=""
       >
-        <button>
-          <img
-            src={githubIcon}
-            alt="Github Icon"
-            className={`${styleImgInfo}`}
-          />
-        </button>
+        <img
+          src={githubIcon}
+          alt="Github Icon"
+          className={`border border-transparent hover:border hover:border-white hover:rounded transition duration-0 hover:duration-300 ${styleImgInfo}`}
+        />
       </a>
       <a
         href="https://www.instagram.com/shizas.png/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button>
-          <img
-            src={instagramIcon}
-            alt="Instagram Icon"
-            className={`${styleImgInfo}`}
-          />
-        </button>
+        <img
+          src={instagramIcon}
+          alt="Instagram Icon"
+          className={`border border-transparent hover:border hover:border-white hover:rounded transition duration-0 hover:duration-300 ${styleImgInfo}`}
+        />
       </a>
       <a
         href="https://www.linkedin.com/in/nicolassampaio/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button>
-          <img
-            src={linkedinIcon}
-            alt="Linkedin Icon"
-            className={`${styleImgInfo}`}
-          />
-        </button>
+        <img
+          src={linkedinIcon}
+          alt="Linkedin Icon"
+          className={`border border-transparent hover:border hover:border-white hover:rounded transition duration-0 hover:duration-300 ${styleImgInfo}`}
+        />
       </a>
     </div>
   );

@@ -6,7 +6,7 @@ import { App } from "./App";
 import { Portfolio } from "./routes/portfolio";
 
 import "./global.css";
-import { Homepage } from "./components/Homepage";
+import { Homepage } from "./routes/Homepage";
 import { AboutMe } from "./routes/aboutMe";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

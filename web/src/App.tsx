@@ -5,7 +5,7 @@ import { Footer } from "./components/Footer";
 
 export function App() {
   return (
-    <div className="flex flex-col justify-between bg-texture bg-repeat min-h-screen">
+    <div className="h-screen flex flex-col justify-between bg-texture bg-repeat">
       <Header />
 
       <Outlet />

@@ -1,14 +1,11 @@
 import { MyRecentWorkButton } from "../components/MyRecentWorkButton";
 import { ContactMe } from "../components/contactme";
 
-import githubImg from "../assets/github.svg";
-import instagramImg from "../assets/instagram.svg";
-import linkedinImg from "../assets/linkedin.svg";
 import perfilImg from "../assets/perfil.png";
 
 export function AboutMe() {
   return (
-    <main className="flex">
+    <main className="flex flex-1">
       <h2
         className="flex items-center justify-center h-24 self-center w-40 -rotate-90
       text-7.5xl whitespace-nowrap text-white"

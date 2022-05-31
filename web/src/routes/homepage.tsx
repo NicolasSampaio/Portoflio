@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
-import { MyRecentWorkButton } from "./MyRecentWorkButton";
+import { MyRecentWorkButton } from "../components/MyRecentWorkButton";
 
 export function Homepage() {
   return (
-    <main className="flex flex-col gap-10 ml-64">
+    <main className="flex flex-1 justify-center flex-col gap-10 ml-64">
       <h1 className="text-7xl leading-[130%] font-bold lincoliGradient">
         Hi, I'm Nicolas Sampaio,
         <br />
