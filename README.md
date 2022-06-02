@@ -1,10 +1,4 @@
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/42179041/171270520-86b1da98-a0f1-4c3b-b2c6-a344fbbfc716.PNG" width="160px">
-</p> 
-
-<h1 align="center">
-    Nicolas Sampaio Portolio
-</h1>
+![screencapture-localhost-3000-2022-06-02-14_29_41](https://user-images.githubusercontent.com/42179041/171689091-f12a1e20-7d00-4df1-a6d3-f874c9cd8955.png)
 
 <br>
 
@@ -49,7 +43,7 @@ Você pode visualizar o layout do projeto através do link abaixo:
 
 
 ## 🤠 ToDo's (Lista pessoal)
-- [] Responsividade
+- [ ] Responsividade
 - [ ] Tela de admin para inserir novos portfólios
 
 
