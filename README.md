@@ -29,12 +29,6 @@ $ npm run dev
 ```
 O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
-## 💻 Projeto
-
-Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 
-
-
-
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através do link abaixo:
