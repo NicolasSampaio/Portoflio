@@ -42,6 +42,7 @@ export function AboutMe() {
           <strong>Frontend</strong>: Html, Css, Javascript, Typescript, Vite,
           Tailwind, React, Angular
         </p>
+        {isMobile ? <ContactMe styleInfo="gap-14 self-center" /> : null}
         <MyRecentWorkButton styleInfo="mt-2" />
       </div>
 
