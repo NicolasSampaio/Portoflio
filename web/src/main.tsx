@@ -9,27 +9,30 @@ import { AboutMe } from "./routes/aboutMe";
 import { Home } from "./routes/home";
 
 import "./global.css";
+import { ScrollToTop } from "./utils/ScrollToTop";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route index element={<Home />} />
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<App />}>
+            <Route index element={<Home />} />
 
-          <Route path="portfolio" element={<Portfolio />} />
-          <Route path="aboutme" element={<AboutMe />} />
-        </Route>
+            <Route path="portfolio" element={<Portfolio />} />
+            <Route path="aboutme" element={<AboutMe />} />
+          </Route>
 
-        <Route
-          path="*"
-          element={
-            <main className="self-center">
-              <p className="text-white">Get out of here curious 👺!</p>
-            </main>
-          }
-        />
-      </Routes>
+          <Route
+            path="*"
+            element={
+              <main className="self-center">
+                <p className="text-white">Get out of here curious 👺!</p>
+              </main>
+            }
+          />
+        </Routes>
+      </ScrollToTop>
     </BrowserRouter>
   </React.StrictMode>
 );
