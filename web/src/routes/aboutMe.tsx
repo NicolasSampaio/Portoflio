@@ -18,7 +18,7 @@ export function AboutMe() {
         </>
       )}
 
-      <div className="flex flex-col max-w-3xl ml-7 mr-7 sm:ml-24 mt-9 sm:mt-0">
+      <div className="flex flex-col sm:items-start items-center max-w-3xl ml-7 mr-7 sm:ml-24 mt-9 sm:mt-0">
         <img
           src="https://github.com/NicolasSampaio/Portoflio/blob/master/web/src/assets/perfil.png?raw=true"
           alt="Foto de Perfil"

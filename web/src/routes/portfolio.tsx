@@ -44,26 +44,29 @@ export function Portfolio() {
           (:
         </p>
 
-        <div className="flex flex-wrap gap-16 min-w-[20rem]">
+        <div className="flex flex-wrap sm:gap-16 min-w-[20rem]">
           {portfolios.map((portfolio, key) => (
-            <div key={key} className="flex flex-col gap-5 max-w-xs">
+            <div
+              key={key}
+              className="flex flex-col sm:gap-5 mb-16 sm:mb-0 sm:max-w-xs"
+            >
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href={portfolio.link}
-                className="flex flex-col gap-5 hover:animate-pulse"
+                className="flex flex-col sm:gap-5 mb-5 sm:mb-0 hover:animate-pulse"
               >
                 <img
                   src={portfolio.img}
                   alt=""
-                  className="max-w-xs max-h-64 rounded-2xl border border-white"
+                  className="max-w-xs max-h-64 rounded-2xl border border-white self-center"
                 />
                 <h2 className="text-white text-2xl text-center font-medium">
                   {portfolio.title}
                 </h2>
               </a>
 
-              <div className="max-h-[90px] overflow-auto scrollbar-thin scrollbar-thumb-lincoliRed scrollbar-track-white pr-7">
+              <div className="max-h-[90px] overflow-auto scrollbar-thin scrollbar-thumb-lincoliRed scrollbar-track-white sm:pr-7">
                 <p className="text-white text-sm text-center">
                   {portfolio.description}
                 </p>
@@ -73,7 +76,7 @@ export function Portfolio() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href={portfolio.github}
-                className="text-lincoliRed italic text-sm text-center font-medium hover:text-blue-700 transition duration-0 hover:duration-300"
+                className="text-lincoliRed italic text-sm text-center font-medium hover:text-blue-700 transition duration-0 hover:duration-300 mt-5 sm:mt-0"
               >
                 Github Repository
               </a>
