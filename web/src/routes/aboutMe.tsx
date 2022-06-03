@@ -1,8 +1,6 @@
 import { MyRecentWorkButton } from "../components/MyRecentWorkButton";
 import { ContactMe } from "../components/Contactme";
 
-import perfilImg from "../assets/perfil.png";
-
 export function AboutMe() {
   return (
     <main className="flex flex-1">
@@ -15,7 +13,11 @@ export function AboutMe() {
 
       <span className="absolute w-96 h-2 border border-lincoliRed bg-lincoliRed rotate-90 rounded top-[25rem] -left-[3.5rem]"></span>
       <div className="max-w-3xl ml-24">
-        <img src={perfilImg} alt="Foto de Perfil" className="w-80 h-80" />
+        <img
+          src="https://github.com/NicolasSampaio/Portoflio/blob/master/web/src/assets/perfil.png?raw=true"
+          alt="Foto de Perfil"
+          className="w-80 h-80"
+        />
         <p className="text-1xl text-white leading-9">
           Be better than yesterday.
           <br /> Majoring in Information Systems. I love the feeling of learning
