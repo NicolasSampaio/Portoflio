@@ -16,7 +16,7 @@ export function Header() {
             <li className="text-1.9xl text-lincoliGrey hover:text-lincoliRed transition duration-0 hover:duration-300">
               <Link to="/">home</Link>
             </li>
-            <li className="text-1.9xl text-lincoliGrey hover:text-lincoliRed transition duration-0 hover:duration-300">
+            <li className="text-1.9xl text-lincoliGrey hover:text-lincoliRed transition duration-0 hover:duration-300 text-center">
               <Link to="aboutme">about me</Link>
             </li>
             {/* <li className="text-1.9xl text-lincoliGrey">
