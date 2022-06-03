@@ -5,7 +5,6 @@ export function Portfolio() {
   const [portfolios, setPortfolios] = useState<PortfolioInterface[]>(
     getPortfolios()
   );
-  console.log("teste", portfolios);
 
   return (
     <main className="flex flex-1">

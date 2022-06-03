@@ -1,4 +1,5 @@
-import frontendMentorImg from "./assets/frontend.png";
+//import frontendMentorImg from "./assets/frontend.png"
+//import frontendMentorImg from "./assets/frontend.png";
 import nlwTogetherImg from "./assets/nlw.png";
 import origamidImg from "./assets/origamid port.png";
 import thisImg from "./assets/this.png";
@@ -22,7 +23,7 @@ const portfolio = [
   {
     title: "FrontEndMentor-QR-Code-Component",
     link: "https://nicolassampaio.github.io/FrontEndMentor-QR-Code-Component/",
-    img: frontendMentorImg,
+    img: "frontendMentorImg",
     description:
       "First challenge from FrontEndMentor, I pretend to do a lot more",
     github:
