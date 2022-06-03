@@ -2,7 +2,7 @@ import { EnvelopeSimple } from "phosphor-react";
 
 export function Footer() {
   return (
-    <footer className="flex justify-between content-center mx-8 mb-8">
+    <footer className="flex justify-between content-center mx-8 mb-8 mt-5">
       <a href="mailto:nicolas.pereira.sampaio16@gmail.com">
         <EnvelopeSimple
           size={52}
@@ -11,7 +11,7 @@ export function Footer() {
         />
       </a>
 
-      <span className="text-1.5xs text-lincoliGrey">
+      <span className="text-1.5xs text-lincoliGrey text-center">
         All rights, lefts and nelsons reserved. 2022
       </span>
     </footer>
