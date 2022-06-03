@@ -1,7 +1,11 @@
-import { getPortfolios } from "../data";
+import { useState } from "react";
+import { getPortfolios, PortfolioInterface } from "../data";
 
 export function Portfolio() {
-  const portfolios = getPortfolios();
+  const [portfolios, setPortfolios] = useState<PortfolioInterface[]>(
+    getPortfolios()
+  );
+  console.log("teste", portfolios);
 
   return (
     <main className="flex flex-1">
@@ -39,8 +43,8 @@ export function Portfolio() {
         </p>
 
         <div className="flex flex-wrap gap-24 min-w-[20rem]">
-          {portfolios.map((portfolio) => (
-            <div className="flex flex-col gap-5 max-w-xs">
+          {portfolios.map((portfolio, key) => (
+            <div key={key} className="flex flex-col gap-5 max-w-xs">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
