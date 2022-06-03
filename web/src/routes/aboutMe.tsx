@@ -1,5 +1,5 @@
 import { MyRecentWorkButton } from "../components/MyRecentWorkButton";
-import { ContactMe } from "../components/contactme";
+import { ContactMe } from "../components/Contactme";
 
 import perfilImg from "../assets/perfil.png";
 
