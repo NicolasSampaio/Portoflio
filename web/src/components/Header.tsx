@@ -12,7 +12,7 @@ export function Header() {
 
         <span className="absolute border border-lincoliRed rounded-2xl w-36 h-36 -top-5 -left-5 rotateSquare"></span>
 
-        <nav className="sm:mt-8 sm:ml-24 mt-2 sm:mt-0">
+        <nav className="sm:mt-8 sm:ml-24 mt-2">
           <ul className="flex h-full sm:gap-20 items-center">
             <li className="text-1.9xl text-lincoliGrey hover:text-lincoliRed transition duration-0 hover:duration-300">
               <Link to="/">home</Link>
