@@ -12,7 +12,7 @@ export function Portfolio() {
     <main className="flex flex-1">
       {isMobile ? null : <SidebarPageName pagename="portfolio" />}
 
-      <div className="ml-7 mr-7 sm:mt-7 mt-11 min-w-[75%]">
+      <div className="ml-7 mr-7 sm:mt-7 mt-4 min-w-[75%]">
         <p className="text-white text-3xl sm:mb-20 mb-10">
           Some projects I worked on, let me know what you think!
           <br />
