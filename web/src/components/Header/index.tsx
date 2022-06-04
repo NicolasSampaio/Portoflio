@@ -1,7 +1,4 @@
-import { Link } from "react-router-dom";
 import { isMobile } from "react-device-detect";
-
-import { Twirl as Hamburger } from "hamburger-react";
 
 import { ContactMe } from "../ContactMe/index";
 import { NSicon } from "./NSicon";
