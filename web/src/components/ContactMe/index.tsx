@@ -1,6 +1,6 @@
-import githubIcon from "../assets/github.svg";
-import instagramIcon from "../assets/instagram.svg";
-import linkedinIcon from "../assets/linkedin.svg";
+import githubIcon from "../../assets/github.svg";
+import instagramIcon from "../../assets/instagram.svg";
+import linkedinIcon from "../../assets/linkedin.svg";
 
 interface ContactMeProps {
   styleInfo?: string;

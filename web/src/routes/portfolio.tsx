@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { getPortfolios, PortfolioInterface } from "../service/api";
 import { isMobile } from "react-device-detect";
+import { SidebarPageName } from "../components/SidebarPageName";
 
 export function Portfolio() {
   const [portfolios, setPortfolios] = useState<PortfolioInterface[]>(
@@ -9,17 +10,7 @@ export function Portfolio() {
 
   return (
     <main className="flex flex-1">
-      {isMobile ? null : (
-        <div className="flex h-[47rem]">
-          <h2
-            className="flex items-center justify-center h-24 self-center w-40 -rotate-90
-      text-7.5xl whitespace-nowrap text-white"
-          >
-            portfolio
-          </h2>
-          <span className="absolute w-96 h-2 border border-lincoliRed bg-lincoliRed rotate-90 rounded top-[25rem] -left-[3.5rem]"></span>
-        </div>
-      )}
+      {isMobile ? null : <SidebarPageName pagename="portfolio" />}
 
       <div className="ml-7 mr-7 sm:mt-7 mt-11 min-w-[75%]">
         <p className="text-white text-3xl sm:mb-20 mb-10">
@@ -66,7 +57,7 @@ export function Portfolio() {
                 </h2>
               </a>
 
-              <div className="max-h-[90px] overflow-auto scrollbar-thin scrollbar-thumb-lincoliRed scrollbar-track-white sm:pr-7">
+              <div className="max-h-[90px] overflow-auto scrollbar-thin scrollbar-thumb-lincoliRed scrollbar-track-white">
                 <p className="text-white text-sm text-center">
                   {portfolio.description}
                 </p>

@@ -3,13 +3,13 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { App } from "./App";
-
 import { Portfolio } from "./routes/portfolio";
 import { AboutMe } from "./routes/aboutMe";
 import { Home } from "./routes/home";
 
-import "./global.css";
 import { ScrollToTop } from "./utils/ScrollToTop";
+
+import "./global.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

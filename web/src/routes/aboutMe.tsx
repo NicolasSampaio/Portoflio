@@ -1,22 +1,13 @@
-import { MyRecentWorkButton } from "../components/MyRecentWorkButton";
-import { ContactMe } from "../components/Contactme";
 import { isMobile } from "react-device-detect";
+
+import { MyRecentWorkButton } from "../components/MyRecentWorkButton/index";
+import { ContactMe } from "../components/ContactMe/index";
+import { SidebarPageName } from "../components/SidebarPageName";
 
 export function AboutMe() {
   return (
     <main className="flex flex-1 ">
-      {isMobile ? null : (
-        <>
-          <h2
-            className="flex items-center justify-center h-24 self-center w-40 -rotate-90
-      text-7.5xl whitespace-nowrap text-white"
-          >
-            about me
-          </h2>
-
-          <span className="absolute w-96 h-2 border border-lincoliRed bg-lincoliRed rotate-90 rounded top-[25rem] -left-[3.5rem]"></span>
-        </>
-      )}
+      {isMobile ? null : <SidebarPageName pagename="about me" />}
 
       <div className="flex flex-col sm:items-start items-center max-w-3xl ml-7 mr-7 sm:ml-24 mt-9 sm:mt-0">
         <img
@@ -42,7 +33,9 @@ export function AboutMe() {
           <strong>Frontend</strong>: Html, Css, Javascript, Typescript, Vite,
           Tailwind, React, Angular
         </p>
-        {isMobile ? <ContactMe styleInfo="gap-14 self-center" /> : null}
+        {isMobile ? (
+          <ContactMe styleInfo="mt-2 mb-2 gap-14 self-center" />
+        ) : null}
         <MyRecentWorkButton styleInfo="mt-2" />
       </div>
 
