@@ -26,7 +26,7 @@ const portfolio: PortfolioInterface[] = [
     link: "https://nicolassampaio.github.io/FrontEndMentor-QR-Code-Component/",
     img: "https://github.com/NicolasSampaio/Portoflio/blob/master/web/src/assets/frontend.PNG?raw=true",
     description:
-      "First challenge from FrontEndMentor, I pretend to do a lot more",
+      "First challenge from FrontEndMentor, I intend to do a lot more",
     github:
       "https://github.com/NicolasSampaio/FrontEndMentor-QR-Code-Component",
   },
