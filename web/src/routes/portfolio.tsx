@@ -9,7 +9,7 @@ export function Portfolio() {
   );
 
   return (
-    <main className="flex flex-1">
+    <main className="flex flex-1 mt-8">
       {isMobile ? null : <SidebarPageName pagename="portfolio" />}
 
       <div className="ml-7 mr-7 sm:mt-7 mt-4 min-w-[75%]">

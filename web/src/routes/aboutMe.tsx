@@ -6,7 +6,7 @@ import { SidebarPageName } from "../components/SidebarPageName";
 
 export function AboutMe() {
   return (
-    <main className="flex flex-1 ">
+    <main className="flex flex-1 mt-8">
       {isMobile ? null : <SidebarPageName pagename="about me" />}
 
       <div className="flex flex-col sm:items-start items-center max-w-3xl ml-7 mr-7 sm:ml-24 mt-9 sm:mt-0">

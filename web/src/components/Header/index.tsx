@@ -8,11 +8,15 @@ export function Header() {
   return (
     <header className="flex justify-between sm:h-auto h-28">
       <>
-        <NSicon />
+        <div className="flex justify-between gap-24">
+          <NSicon />
 
-        <Navbar />
+          <Navbar />
+        </div>
 
-        {isMobile ? null : <ContactMe styleInfo="gap-7 mt-8 mr-12" />}
+        {window.innerWidth < 640 ? null : (
+          <ContactMe styleInfo="gap-7 mt-8 mr-12" />
+        )}
       </>
     </header>
   );
