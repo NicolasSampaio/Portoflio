@@ -27,7 +27,7 @@ CREATE TABLE "Portfolio" (
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
     "title" TEXT NOT NULL,
-    "portfolioLink" TEXT NOT NULL,
+    "link" TEXT NOT NULL,
     "imgLink" TEXT NOT NULL,
     "description" TEXT NOT NULL,
     "githubLink" TEXT NOT NULL,

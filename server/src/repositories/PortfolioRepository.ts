@@ -1,14 +1,15 @@
 export interface PortfolioCreate {
   title: string;
-  portfolioLink: string;
+  link: string;
   imgLink: string;
   description: string;
   githubLink: string;
 }
 
-export interface PortfolioFind {
+export interface PortfolioRead {
+  id: number;
   title: string;
-  portfolioLink: string;
+  link: string;
   imgLink: string;
   description: string;
   githubLink: string;
@@ -17,5 +18,5 @@ export interface PortfolioFind {
 export interface PortfolioRepository {
   create: (data: PortfolioCreate) => Promise<void>;
   createMany: (data: PortfolioCreate[]) => Promise<void>;
-  findMany: () => Promise<PortfolioFind[]>;
+  findMany: () => Promise<PortfolioRead[]>;
 }

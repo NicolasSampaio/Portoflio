@@ -33,7 +33,7 @@ routes.post("/portfolios", async (req: Request, res: Response) => {
     description,
     githubLink: github,
     imgLink: img,
-    portfolioLink: link,
+    link: link,
     title,
   };
   await createPortoflioUseCase.execute(reqMap);
@@ -60,7 +60,7 @@ routes.post("/portfoliosMany", async (req: Request, res: Response) => {
   //       description: portfolio.description,
   //       githubLink: portfolio.github,
   //       imgLink: portfolio.img,
-  //       portfolioLink: portfolio.link,
+  //       link: portfolio.link,
   //       title: portfolio.title,
   //     };
   //   }

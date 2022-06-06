@@ -1,7 +1,7 @@
 import { prisma } from "../../prisma";
 import {
   PortfolioCreate,
-  PortfolioFind,
+  PortfolioRead,
   PortfolioRepository,
 } from "../PortfolioRepository";
 
@@ -14,13 +14,14 @@ export class PrismaPortfolioRepository implements PortfolioRepository {
     await prisma.portfolio.createMany({ data });
   }
 
-  async findMany(): Promise<PortfolioFind[]> {
+  async findMany(): Promise<PortfolioRead[]> {
     const portfolios = await prisma.portfolio.findMany();
 
-    const portofoliosMap: PortfolioFind[] = portfolios.map((portfolio) => {
-      return <PortfolioFind>{
+    const portofoliosMap: PortfolioRead[] = portfolios.map((portfolio) => {
+      return <PortfolioRead>{
+        id: portfolio.id,
         title: portfolio.title,
-        portfolioLink: portfolio.portfolioLink,
+        link: portfolio.link,
         imgLink: portfolio.imgLink,
         description: portfolio.description,
         githubLink: portfolio.githubLink,
