@@ -1,6 +1,6 @@
 import { PortfolioRepository } from "../repositories/PortfolioRepository";
 
-interface CreatePortoflioUseCaseRequest {
+export interface CreatePortoflioUseCaseRequest {
   title: string;
   portfolioLink: string;
   imgLink: string;
